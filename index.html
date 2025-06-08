@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RPS GAME</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div id="stars"></div>
+       <div id="stars2"></div>
+       <div id="stars3"></div>
+       
+        <h1>Rock Paper Scissors Game</h1>
+        <div class="game-button">
+            <button onclick="playGame('rock')">ROCK</button>
+            <button onclick="playGame('paper')">PAPER</button>
+            <button onclick="playGame('scissors')">SCISSORS</button>
+        </div>
+        <div id="result-box">
+          <p id="user-choice">You chose: </p>
+          <p id="computer-choice">Computer chose: </p>
+          <p id="winner">Result: </p>
+          <p id="score">Score - You: 0 | Computer: 0</p>
+          <button id="reset-btn" onclick="resetScore()">Reset Score</button>
+        </div>
+        <button id="toggle-music" onclick="toggleMusic()">🎵 Mute Music</button>
+        <audio id="bg-music" src="serene.mp3" loop autoplay></audio>
+       
+
+        <script src="script.js"></script>
+    </body>
+</html>
